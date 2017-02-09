@@ -1,4 +1,5 @@
 # quibbler
+[![Build Status](https://travis-ci.org/johnmcconnell/quibbler.svg?branch=master)](https://travis-ci.org/johnmcconnell/quibbler)
 
 A library to make acceptance testing feel amazing in clojure.
 
