@@ -12,5 +12,5 @@ then
 
   git add -A
   git commit -m 'Update docs'
-  git push tmp gh-pages:gh-pages -f
+  git push tmp gh-pages:gh-pages -f >/dev/null 2>&1
 fi
