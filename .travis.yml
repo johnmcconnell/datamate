@@ -5,6 +5,10 @@ lein: 2.7.1
 script:
 - lein cljfmt check
 - lein test
+- lein codox
+
+after_success:
+  - ./push-docs
 
 jdk:
 - openjdk7
