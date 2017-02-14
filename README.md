@@ -17,6 +17,12 @@ A Clojure DSL to make working with oracle enjoyable
   lein test
 ```
 
+### Deploy
+
+```
+  CLOJARS_USERNAME=<username> CLOJARS_PASSWORD=<password> lein deploy clojars
+```
+
 ## License
 
 Copyright © 2017 John McConnell
