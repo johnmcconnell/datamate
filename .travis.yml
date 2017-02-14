@@ -3,12 +3,17 @@ language: clojure
 lein: 2.7.1
 
 script:
-- lein cljfmt check
-- lein test
-- lein codox
+  - lein cljfmt check
+  - lein test
+  - lein codox
 
 after_success:
+  - ./add-tmp-remote
   - ./push-docs
 
 jdk:
-- openjdk7
+  - openjdk7
+
+env:
+  global:
+    secure: N1R6nLsEcWuu1cjJiEpa1jeOCfojOvtgxKL9iC97xbME8+Xn0Xu4uKC2UFP1Yog2U+07wIKsARTvHrPNyg7mXBEIj7KePUGnyFPh1FEA6DNnBKPKgrFxkHw8/ZodIjgz1X3j3aLjWj9NkpqT2ltanFnBM9nA9SnAfw1EXu9pLWVI4E1ii66SwL2ur9lgDtHd9KppsS6YCOgHejH+7fUn7XiCtMY+rIMuuiC9vGb3+chHJ8xbBdb9UHpLn67HwQhAeOqa4HeYSpWT/RQFdlmvIv59oQC1Kiltgnoiu2Hmhgb82y74J4z9WZtF9NOpS9UIpit6FPBzsVmLAu2xVOmAodd1R20Nld6LUwxrLuBvXCtTj74EJY2Tz5H1kbV6AOcqJMtrPTQF5dK3rijqa928P/bKdI5+W6PB0/H1iF/hz1hyLO/QFsq+w1ipg3iA6XWrCGw138t1d6UOTyoRwsgM85syFj4ih8+gm0ZWG6T9EaLUAutxK545kpNrfIdULh/ZyAS4N1meVaVBtYgOfPi49MQzU2h2XWEQLqeV95YJym5TUolrlFoeppBSrGejfIWrVugePKfsbkdM7mkRl4ZQE9pNeyJPejW/yAZlSWjMVoM7XtTU6onVuwRlGVLzJIY9/5sswzsDc1ZQT/IlsDRz+ZFPkMYc2sgwsypHoU9iUBc=
