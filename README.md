@@ -3,6 +3,16 @@
 
 A Clojure DSL to make working with oracle enjoyable
 
+## Clojars
+
+[![Clojars Project](https://img.shields.io/clojars/v/datamate.svg)](https://clojars.org/datamate)
+
+Add the following dependency to your *project.clj* file:
+
+```
+  [datamate "0.1.0"]
+```
+
 ## API Docs
 [API Docs](http://ghub.reductist.com/datamate/)
 
