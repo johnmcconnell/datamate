@@ -1,0 +1,10 @@
+language: clojure
+
+lein: 2.7.1
+
+script:
+- lein cljfmt check
+- lein test
+
+jdk:
+- openjdk7
