@@ -1,4 +1,5 @@
 # datamate
+[![Build Status](https://travis-ci.org/johnmcconnell/datamate.svg?branch=master)](https://travis-ci.org/johnmcconnell/datamate)
 
 A Clojure DSL to make working with oracle enjoyable
 
