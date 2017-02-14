@@ -1,4 +1,4 @@
-(defproject datamate "0.1.0-SNAPSHOT"
+(defproject datamate "0.1.0"
   :description "A clojure DSL to make Oracle more enjoyable"
   :url "https://github.com/johnmcconnell/datamate"
   :license {:name "Eclipse Public License"
