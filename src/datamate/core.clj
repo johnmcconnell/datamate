@@ -63,3 +63,17 @@
 (defn nchar
   "Returns a NCHAR(i) with i as the size passed to the function"
   [size] (str "NCHAR(" size ")"))
+
+(o-def "DEFAULT")
+
+(o-def "NULL")
+
+(o-def "NOT NULL")
+
+(o-def "UNIQUE")
+
+(o-def "PRIMARY KEY")
+
+(o-def "FOREIGN KEY")
+
+(o-def "CHECK")

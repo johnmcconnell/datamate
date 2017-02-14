@@ -74,3 +74,21 @@
 (defspec nchar-test
   (prop/for-all [i gen/int]
                 (is (= (str "NCHAR(" i ")") (nchar i)))))
+
+(deftest default-test
+  (is (= "DEFAULT" default)))
+
+(deftest null-test
+  (is (= "NULL" null)))
+
+(deftest not-null-test
+  (is (= "NOT NULL" not-null)))
+
+(deftest primary-key-test
+  (is (= "PRIMARY KEY" primary-key)))
+
+(deftest foreign-key-test
+  (is (= "FOREIGN KEY" foreign-key)))
+
+(deftest check-test
+  (is (= "CHECK" check)))
