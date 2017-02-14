@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+set -e
+
+if [ "master" == "$TRAVIS_BRANCH" ]
+then
+  git remote add tmp https://johnmcconnell:$GITHUB_TOKEN@github.com/johnmcconnell/datamate
+fi
