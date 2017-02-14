@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -e
+
+if [ "master" == "$TRAVIS_BRANCH" ]
+then
+  git checkout -B gh-pages
+
+  lein codox
+  cp -r target/doc/* .
+  rm README.md
+
+  git add -A
+  git commit -m 'Update docs'
+  git push origin gh-pages:gh-pages -f
+fi

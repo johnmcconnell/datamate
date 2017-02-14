@@ -3,6 +3,9 @@
 
 A Clojure DSL to make working with oracle enjoyable
 
+## API Docs
+[API Docs](http://ghub.reductist.com/datamate/)
+
 ## Usage
 
 ### Build
