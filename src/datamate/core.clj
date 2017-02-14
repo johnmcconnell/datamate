@@ -12,7 +12,7 @@
 
 (defmacro o-def
   [s]
-  `(def ~(defname s) ~s))
+  `(def ~(defname s) ~s ~s))
 
 (defn- ->cap-keyword
   [s]
