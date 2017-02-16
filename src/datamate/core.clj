@@ -1,4 +1,7 @@
 (ns datamate.core
+  "The core definitions of datamate
+
+  It contains mostly oracle datatypes and qualifiers"
   (:require
    [clojure.string :as s :refer [lower-case upper-case]]))
 
@@ -8,6 +11,7 @@
    s
    lower-case
    (s/replace #"_| " "-")
+   (s/replace #"[\(\)]" "")
    symbol))
 
 (defmacro o-def
@@ -77,3 +81,5 @@
 (o-def "FOREIGN KEY")
 
 (o-def "CHECK")
+
+(o-def "SYS_GUID()")

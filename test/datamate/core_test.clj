@@ -92,3 +92,6 @@
 
 (deftest check-test
   (is (= "CHECK" check)))
+
+(deftest sys-guid-test
+  (is (= "SYS_GUID()" sys-guid)))
