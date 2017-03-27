@@ -1,9 +1,13 @@
 language: clojure
 lein: 2.7.1
-
 script:
 - lein cljfmt check
 - lein test
-
+after_success:
+- ./add-tmp-remote
+- ./push-docs
 jdk:
 - openjdk7
+env:
+  global:
+    secure: SXZezbsAaMLXZB/NpbWhpB5KuIwyxbWr9pD4YB1f1O1KRW44GNmp6+26u1tPUUnpl2F8ZVU+RCU8LRzlxQBS2hT5hvCaDIqnhQp0Z8NU8hM1sEGzwBTQdM4q9nCUWAazw+oqtSK3InuG4ySr7+D/JpfpMXKG0Rk8r/prm51n5gXmJFOWaoUio1Bj8kni9eom87FL4VG6cD/qpjHBvAhCHCulcn3mY6PD6yKUszqrumtnGCfcmYlqKemfJ0ulDrQkQZG/sVD1n8GQj2Xdd/Ckwbbli9wO/Zu3Kd4IuyBrlFas6L735RPqNC/EOLNOzBL1riQSNxSYrjtV1XeHg7r76WYJgkU3O3KKGxw/suwelEYWNi226mt093aIkfwBNeWmtwYFIEczqyDIRAlNagXPsB4CKE3cwSFSFfGjV1u5qAlde79I7PSCav8rewXFD36Tr1XoEkDu8FcTkKX9tJV/tTeTut6MCLcpCFfx6XRCcCwVpPPJZLbLhul83RiBGzAXixJMyw42m+/wJxtFaL1Wl0XZab9W/D/zHUzh9hLqWTENb4x0VbJCDwdr5cGBjOtIaKIqO6WBvVTZy7wk9u1jB9+Ks6HKHNmzC1mvOvbMGKXr0T1UzrqaorMy2HI3Md0oLiEOLRbHp1dbRROEEFy8+uyskfIreVBNtoLUoIJpFOM=
