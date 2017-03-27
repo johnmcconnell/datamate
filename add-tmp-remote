@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+set -e
+
+if [ "master" == "$TRAVIS_BRANCH" ]
+then
+  git config --global user.email "johnnyillinois@gmail.com"
+  git config --global user.name "John McConnell"
+
+  git remote add tmp https://johnmcconnell:$GITHUB_TOKEN@github.com/johnmcconnell/datamate
+fi
